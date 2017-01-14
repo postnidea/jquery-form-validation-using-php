@@ -1,21 +1,3 @@
-/* 
-	Validation  Plugin 
-  	Created on : Thursday, June 13, 2013
-  	Programmer : Shishir raven
-  
-  Description: adds valiation to the form specified checking the form Server Side.
-	 
-	How to use: 
-	
-	Step 1 : Include this file into the form file
-
-	Step 2: Write the following code
-
-   $('#button_id').server_validation({
-		form_id:'myform_without#',
-		validtion_script:'services/script_that_will_return_json.php'
-	});*/
-
 jQuery.fn.server_validation = function(options){
 //For each matching class
 var settings = jQuery.extend({

@@ -49,7 +49,7 @@ var settings = jQuery.extend({
 							   $('.form-group').removeClass('has-error');
 		     				  if(error_obj.status==false)
 		     				  {
-		     				  	
+		     				  	$('#'+settings.form_id)[0].reset();
 								$('#'+settings.button_id).after(alert_message(error_obj.data[0].error));
 		     				  	//for redirecting the page after successful complete
 		     				  	if(error_obj.data.length>1 && error_obj.data[1].link.length>0){
